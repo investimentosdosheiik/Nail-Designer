@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tati Santos Nail Designer | Manicure, Pedicure e Unhas em Gel</title>
+  <meta property="og:title" content="Tati Santos Nail Designer | Cuidado, Beleza e Confiança">
+  <meta property="og:description" content="Manicure, pedicure, blindagem, alongamento F1, esmaltação em gel e spa dos pés. Agende seu horário pelo WhatsApp.">
+  <meta name="theme-color" content="#080808">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <meta
+    name="description"
+    content="Tati Santos Nail Designer em Goiânia. Manicure, pedicure, blindagem, esmaltação em gel, alongamento no molde F1 e spa dos pés."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --preto: #080808;
+      --preto-2: #111111;
+      --preto-3: #191919;
+      --dourado: #c7a45b;
+      --dourado-claro: #e4c985;
+      --creme: #f8f1e5;
+      --cinza: #bdb6ac;
+      --branco: #ffffff;
+      --borda: rgba(199, 164, 91, .35);
+      --sombra: 0 25px 70px rgba(0, 0, 0, .28);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      overflow-x: hidden;
+      color: var(--branco);
+      background: var(--preto);
+      font-family: "Montserrat", Arial, sans-serif;
+    }
+
+    body.menu-aberto {
+      overflow: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    .container {
+      width: min(1160px, calc(100% - 36px));
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 110px 0;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 13px;
+      margin-bottom: 20px;
+      color: var(--dourado-claro);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before,
+    .eyebrow::after {
+      content: "";
+      width: 28px;
+      height: 1px;
+      background: currentColor;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-weight: 500;
+      line-height: .92;
+    }
+
+    h2 {
+      font-size: clamp(48px, 6vw, 78px);
+    }
+
+    .button {
+      min-height: 52px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 0 25px;
+      border: 1px solid var(--dourado);
+      cursor: pointer;
+      color: var(--preto);
+      background: var(--dourado);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      transition: .3s ease;
+    }
+
+    .button:hover {
+      color: var(--preto);
+      background: var(--dourado-claro);
+      transform: translateY(-4px);
+    }
+
+    .button-outline {
+      color: var(--dourado-claro);
+      background: transparent;
+    }
+
+    .button-outline:hover {
+      color: var(--preto);
+    }
+
+    /* TOPO */
+
+    .topbar {
+      min-height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--dourado-claro);
+      background: #050505;
+      border-bottom: 1px solid rgba(199, 164, 91, .18);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: .13em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    /* NAVEGAÇÃO */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      background: rgba(8, 8, 8, .94);
+      border-bottom: 1px solid rgba(199, 164, 91, .18);
+      backdrop-filter: blur(15px);
+    }
+
+    .nav {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand-mark {
+      width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      border: 1px solid var(--dourado);
+      border-radius: 50%;
+      color: var(--dourado-claro);
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 31px;
+      font-style: italic;
+      letter-spacing: -.08em;
+      box-shadow: inset 0 0 0 4px rgba(199,164,91,.08);
+    }
+
+    .brand-name {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 27px;
+      line-height: .85;
+    }
+
+    .brand-name small {
+      display: block;
+      margin-top: 7px;
+      color: var(--dourado);
+      font-family: "Montserrat", Arial, sans-serif;
+      font-size: 8px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      color: #d7d0c6;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .04em;
+    }
+
+    .nav-links a:not(.button):hover {
+      color: var(--dourado-claro);
+    }
+
+    .menu-button {
+      display: none;
+      color: var(--dourado);
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+      font-size: 29px;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 720px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(8,8,8,.98) 0%, rgba(8,8,8,.92) 41%, rgba(8,8,8,.52) 73%, rgba(8,8,8,.25) 100%),
+        url("assets/unha-gel.jpg") center 48% / cover;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      right: -180px;
+      top: -190px;
+      width: 600px;
+      height: 600px;
+      border: 1px solid rgba(199,164,91,.4);
+      border-radius: 50%;
+      box-shadow:
+        0 0 0 35px rgba(199,164,91,.08),
+        0 0 0 70px rgba(199,164,91,.05);
+    }
+
+    .hero::after {
+      content: "✦";
+      position: absolute;
+      right: 20%;
+      bottom: 17%;
+      color: var(--dourado);
+      font-size: 34px;
+      animation: brilho 3s ease-in-out infinite;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 670px;
+      padding: 110px 0;
+      animation: entrada 1s ease both;
+    }
+
+    .hero h1 {
+      margin-bottom: 26px;
+      color: var(--branco);
+      font-size: clamp(70px, 9vw, 125px);
+    }
+
+    .hero h1 span {
+      display: block;
+      color: var(--dourado-claro);
+      font-style: italic;
+    }
+
+    .hero-text {
+      max-width: 515px;
+      margin-bottom: 32px;
+      color: #d4cec5;
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .hero-signature {
+      margin-top: 42px;
+      color: var(--dourado);
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 29px;
+      font-style: italic;
+    }
+
+    /* SOBRE */
+
+    .about {
+      position: relative;
+      background: var(--creme);
+      color: var(--preto);
+    }
+
+    .about::after {
+      content: "TS";
+      position: absolute;
+      top: 30px;
+      right: 5%;
+      color: rgba(199,164,91,.11);
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 190px;
+    }
+
+    .about-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 80px;
+    }
+
+    .about h2 {
+      margin-bottom: 25px;
+    }
+
+    .about h2 span {
+      color: #a17c39;
+      font-style: italic;
+    }
+
+    .about p {
+      max-width: 530px;
+      margin-bottom: 17px;
+      color: #625c54;
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    .about-list {
+      display: grid;
+      gap: 13px;
+      margin: 28px 0 32px;
+    }
+
+    .about-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      list-style: none;
+      color: #302c28;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .about-list li::before {
+      content: "✦";
+      color: #a17c39;
+      font-size: 16px;
+    }
+
+    .about-photo {
+      position: relative;
+      padding: 20px;
+    }
+
+    .about-photo::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border: 1px solid #b99857;
+      transform: rotate(5deg);
+    }
+
+    .about-photo img {
+      position: relative;
+      width: 100%;
+      height: 460px;
+      object-fit: cover;
+      filter: saturate(.9);
+    }
+
+    /* SERVIÇOS */
+
+    .services {
+      background: var(--preto-2);
+    }
+
+    .section-heading {
+      max-width: 720px;
+      margin-bottom: 50px;
+    }
+
+    .section-heading h2 {
+      margin-bottom: 20px;
+    }
+
+    .section-heading p {
+      max-width: 530px;
+      color: var(--cinza);
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .service-card {
+      min-height: 275px;
+      position: relative;
+      overflow: hidden;
+      padding: 30px;
+      border: 1px solid var(--borda);
+      background: linear-gradient(145deg, #171717, #0d0d0d);
+      transition: .35s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--dourado);
+      box-shadow: var(--sombra);
+    }
+
+    .service-card::before {
+      content: "";
+      position: absolute;
+      right: -52px;
+      top: -52px;
+      width: 150px;
+      height: 150px;
+      border: 1px solid rgba(199,164,91,.35);
+      border-radius: 50%;
+    }
+
+    .service-number {
+      display: block;
+      margin-bottom: 52px;
+      color: var(--dourado);
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 24px;
+    }
+
+    .service-card h3 {
+      margin-bottom: 12px;
+      color: var(--dourado-claro);
+      font-size: 31px;
+    }
+
+    .service-card p {
+      color: #bdb6ac;
+      font-size: 12px;
+      line-height: 1.7;
+    }
+
+    /* DESTAQUE */
+
+    .highlight {
+      position: relative;
+      overflow: hidden;
+      background: radial-gradient(circle at 85% 50%, rgba(199,164,91,.12), transparent 34%), #0b0b0b;
+    }
+
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      align-items: center;
+      gap: 70px;
+    }
+
+    .highlight-box {
+      max-width: 680px;
+      padding: 30px 0;
+    }
+
+    .highlight-poster-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .highlight-poster {
+      width: min(100%, 355px);
+      max-height: 620px;
+      object-fit: contain;
+      border: 1px solid var(--borda);
+      box-shadow: var(--sombra);
+    }
+
+    .highlight h2 {
+      margin-bottom: 23px;
+    }
+
+    .highlight h2 span {
+      color: var(--dourado-claro);
+      font-style: italic;
+    }
+
+    .highlight p {
+      max-width: 570px;
+      color: #d1cbc3;
+      line-height: 1.9;
+      font-size: 14px;
+    }
+
+    /* GALERIA */
+
+    .gallery {
+      background: var(--creme);
+      color: var(--preto);
+    }
+
+    .gallery .section-heading p {
+      color: #625c54;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr .8fr;
+      grid-template-rows: 210px 210px;
+      gap: 14px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      background: #ddd;
+    }
+
+    .gallery-item:first-child {
+      grid-row: span 2;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: .5s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.08);
+    }
+
+    .gallery-item::after {
+      content: "Tati Santos";
+      position: absolute;
+      right: 15px;
+      bottom: 12px;
+      color: white;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 18px;
+      opacity: 0;
+      transition: .3s ease;
+    }
+
+    .gallery-item:hover::after {
+      opacity: 1;
+    }
+
+    /* AGENDAMENTO */
+
+    .booking {
+      background: var(--preto);
+    }
+
+    .booking-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      align-items: center;
+      gap: 75px;
+    }
+
+    .booking-copy h2 {
+      margin-bottom: 22px;
+    }
+
+    .booking-copy h2 span {
+      color: var(--dourado-claro);
+      font-style: italic;
+    }
+
+    .booking-copy p {
+      max-width: 500px;
+      color: var(--cinza);
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    .booking-list {
+      display: grid;
+      gap: 13px;
+      margin-top: 28px;
+    }
+
+    .booking-list li {
+      display: flex;
+      gap: 11px;
+      color: #d5cec3;
+      list-style: none;
+      font-size: 13px;
+    }
+
+    .booking-list li::before {
+      content: "♡";
+      color: var(--dourado);
+      font-size: 17px;
+    }
+
+    .booking-card {
+      padding: 35px;
+      border: 1px solid var(--borda);
+      background: var(--preto-2);
+      box-shadow: var(--sombra);
+    }
+
+    .booking-card h3 {
+      margin-bottom: 25px;
+      color: var(--dourado-claro);
+      font-size: 37px;
+    }
+
+    .booking-card input,
+    .booking-card select,
+    .booking-card textarea {
+      width: 100%;
+      min-height: 49px;
+      margin-bottom: 14px;
+      padding: 13px 15px;
+      outline: none;
+      border: 1px solid rgba(255,255,255,.16);
+      color: white;
+      background: #0c0c0c;
+      font-size: 12px;
+    }
+
+    .booking-card textarea {
+      min-height: 95px;
+      resize: vertical;
+    }
+
+    .booking-card input::placeholder,
+    .booking-card textarea::placeholder {
+      color: #89827a;
+    }
+
+    .booking-card input:focus,
+    .booking-card select:focus,
+    .booking-card textarea:focus {
+      border-color: var(--dourado);
+    }
+
+    .booking-card select option {
+      color: black;
+    }
+
+    .booking-card .button {
+      width: 100%;
+      margin-top: 4px;
+    }
+
+    /* LOCALIZAÇÃO */
+
+    .location {
+      background: var(--creme);
+      color: var(--preto);
+    }
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .location h2 {
+      margin-bottom: 23px;
+    }
+
+    .location p {
+      max-width: 500px;
+      margin-bottom: 25px;
+      color: #625c54;
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    .location-info {
+      display: grid;
+      gap: 17px;
+      margin-bottom: 30px;
+    }
+
+    .location-info div {
+      display: flex;
+      gap: 13px;
+      align-items: flex-start;
+      color: #403b35;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .location-info strong {
+      display: block;
+      color: var(--preto);
+      margin-bottom: 3px;
+    }
+
+    .location-icon {
+      color: #a17c39;
+      font-size: 19px;
+    }
+
+    .map {
+      min-height: 390px;
+      overflow: hidden;
+      border: 8px solid white;
+      box-shadow: var(--sombra);
+    }
+
+    .map iframe {
+      width: 100%;
+      height: 390px;
+      border: 0;
+      filter: grayscale(.75) sepia(.2);
+    }
+
+    /* RODAPÉ */
+
+    footer {
+      padding: 48px 0 22px;
+      color: #aca49a;
+      background: #050505;
+      border-top: 1px solid var(--borda);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr .8fr;
+      gap: 35px;
+    }
+
+    .footer-logo {
+      color: var(--dourado-claro);
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 34px;
+    }
+
+    footer h3 {
+      margin-bottom: 14px;
+      color: var(--dourado-claro);
+      font-size: 26px;
+    }
+
+    footer p {
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    .copyright {
+      margin-top: 37px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,.12);
+      color: #746e67;
+      font-size: 10px;
+      text-align: center;
+    }
+
+    .whatsapp {
+      width: 59px;
+      height: 59px;
+      position: fixed;
+      right: 21px;
+      bottom: 21px;
+      z-index: 20;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: white;
+      background: #20b968;
+      box-shadow: 0 10px 30px rgba(32,185,104,.32);
+      font-size: 25px;
+      animation: pulsar 2.5s infinite;
+    }
+
+    /* ANIMAÇÕES */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: .8s ease;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes entrada {
+      from {
+        opacity: 0;
+        transform: translateX(-35px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes brilho {
+      0%, 100% {
+        opacity: .45;
+        transform: scale(.9) rotate(0);
+      }
+
+      50% {
+        opacity: 1;
+        transform: scale(1.2) rotate(20deg);
+      }
+    }
+
+    @keyframes pulsar {
+      0%, 100% {
+        box-shadow: 0 10px 30px rgba(32,185,104,.32);
+      }
+
+      50% {
+        box-shadow: 0 10px 30px rgba(32,185,104,.32), 0 0 0 12px rgba(32,185,104,.1);
+      }
+    }
+
+    /* RESPONSIVIDADE */
+
+    @media (max-width: 900px) {
+      .menu-button {
+        display: block;
+      }
+
+      .nav-links {
+        position: fixed;
+        top: 119px;
+        left: 15px;
+        right: 15px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 18px;
+        border: 1px solid var(--borda);
+        background: #0d0d0d;
+        box-shadow: var(--sombra);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links a:not(.button) {
+        padding: 15px 4px;
+        border-bottom: 1px solid rgba(255,255,255,.1);
+      }
+
+      .nav-links .button {
+        margin-top: 14px;
+      }
+
+      .about-grid,
+      .booking-grid,
+      .location-grid,
+      .highlight-grid {
+        grid-template-columns: 1fr;
+        gap: 42px;
+      }
+
+      .highlight-poster {
+        width: min(100%, 330px);
+        max-height: 560px;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 570px) {
+      .container {
+        width: calc(100% - 28px);
+      }
+
+      .hero {
+        min-height: 700px;
+      }
+
+      .hero h1 {
+        font-size: clamp(52px, 13vw, 66px);
+      }
+
+      .hero-text {
+        font-size: 13px;
+      }
+
+      .section {
+        padding: 78px 0;
+      }
+
+      .service-grid,
+      .gallery-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-rows: repeat(3, 260px);
+      }
+
+      .gallery-item:first-child {
+        grid-row: auto;
+      }
+
+      .about-photo img {
+        height: 340px;
+      }
+
+      .booking-card {
+        padding: 24px;
+      }
+
+      .map,
+      .map iframe {
+        min-height: 300px;
+        height: 300px;
+      }
+
+      .whatsapp {
+        right: 15px;
+        bottom: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topbar">
+    Agende seu horário e cuide das suas unhas com carinho
+  </div>
+
+  <header>
+    <nav class="container nav">
+
+      <a href="#inicio" class="brand">
+        <span class="brand-mark" aria-hidden="true">TS</span>
+        <span class="brand-name">
+          Tati Santos
+          <small>Nail Designer</small>
+        </span>
+      </a>
+
+      <button class="menu-button" onclick="alternarMenu()" aria-label="Abrir menu">
+        ☰
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#sobre" onclick="fecharMenu()">Sobre</a>
+        <a href="#servicos" onclick="fecharMenu()">Serviços</a>
+        <a href="#galeria" onclick="fecharMenu()">Galeria</a>
+        <a href="#agendamento" onclick="fecharMenu()">Agendamento</a>
+        <a href="#localizacao" onclick="fecharMenu()">Localização</a>
+
+        <a
+          class="button"
+          href="https://wa.me/5562981299177?text=Olá!%20Gostaria%20de%20agendar%20um%20horário."
+          target="_blank" rel="noopener noreferrer">
+          Agendar horário
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+
+    <section class="hero" id="inicio">
+      <div class="container hero-content">
+
+        <div class="eyebrow">Cuidado · Beleza · Confiança</div>
+
+        <h1>
+          Tudo que você merece,
+          <span>em um só lugar.</span>
+        </h1>
+
+        <p class="hero-text">
+          Manicure, pedicure, esmaltação em gel, blindagem, alongamento e
+          cuidados especiais para deixar suas unhas ainda mais bonitas.
+        </p>
+
+        <div class="hero-actions">
+          <a
+            class="button"
+            href="https://wa.me/5562981299177?text=Olá!%20Gostaria%20de%20agendar%20um%20horário."
+            target="_blank" rel="noopener noreferrer">
+            Agendar pelo WhatsApp ↗
+          </a>
+
+          <a class="button button-outline" href="#servicos">
+            Conhecer serviços
+          </a>
+        </div>
+
+        <div class="hero-signature">
+          Tati Santos Nail Designer
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+
+    <section class="section about" id="sobre">
+      <div class="container about-grid">
+
+        <div class="reveal">
+          <div class="eyebrow" style="color:#a17c39">
+            Uma experiência especial
+          </div>
+
+          <h2>
+            Beleza nos detalhes
+            <span>e cuidado em cada toque.</span>
+          </h2>
+
+          <p>
+            Um espaço pensado para você relaxar, cuidar de si e sair se
+            sentindo ainda mais bonita.
+          </p>
+
+          <p>
+            Cada atendimento é realizado com atenção, delicadeza e cuidado
+            para valorizar o seu estilo.
+          </p>
+
+          <ul class="about-list">
+            <li>Atendimento personalizado</li>
+            <li>Acabamento delicado e profissional</li>
+            <li>Produtos selecionados para seu cuidado</li>
+            <li>Serviços para mãos e pés</li>
+          </ul>
+
+          <a
+            class="button"
+            href="https://wa.me/5562981299177?text=Olá!%20Gostaria%20de%20conhecer%20os%20serviços."
+            target="_blank" rel="noopener noreferrer">
+            Falar com a Tati
+          </a>
+        </div>
+
+        <div class="about-photo reveal">
+          <img src="assets/unha-gel.jpg" alt="Esmaltação em gel">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+
+    <section class="section services" id="servicos">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div class="eyebrow">Serviços</div>
+
+          <h2>Escolha seu momento de cuidado.</h2>
+
+          <p>
+            Procedimentos para realçar sua beleza e deixar suas unhas
+            impecáveis em qualquer ocasião.
+          </p>
+        </div>
+
+        <div class="service-grid">
+
+          <article class="service-card reveal">
+            <span class="service-number">01</span>
+            <h3>Manicure</h3>
+            <p>
+              Cuidados completos para mãos bonitas, bem cuidadas e com
+              acabamento delicado.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">02</span>
+            <h3>Pedicure</h3>
+            <p>
+              Tratamento cuidadoso para seus pés, com opções tradicional e em
+              gel.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">03</span>
+            <h3>Blindagem</h3>
+            <p>
+              Proteção para unhas naturais com esmaltação em gel e acabamento
+              elegante.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">04</span>
+            <h3>Alongamento F1</h3>
+            <p>
+              Alongamento no molde F1 para unhas com formato bonito e
+              acabamento sofisticado.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">05</span>
+            <h3>Spa dos pés</h3>
+            <p>
+              Um cuidado personalizado para relaxar e renovar a sensação de
+              bem-estar.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">06</span>
+            <h3>Esmaltação em gel</h3>
+            <p>
+              Brilho, elegância e acabamento profissional para suas unhas.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTAQUE -->
+
+    <section class="section highlight">
+      <div class="container highlight-grid">
+        <div class="highlight-box reveal">
+          <div class="eyebrow">Seu momento</div>
+
+          <h2>
+            Mais do que unhas bonitas:
+            <span>um momento para você.</span>
+          </h2>
+
+          <p>
+            Reserve um tempo para se cuidar, relaxar e sair com a autoestima
+            renovada. Escolha seu serviço e fale pelo WhatsApp para consultar
+            horários disponíveis.
+          </p>
+
+          <br>
+
+          <a
+            class="button"
+            href="https://wa.me/5562981299177?text=Olá!%20Gostaria%20de%20consultar%20os%20horários%20disponíveis."
+            target="_blank" rel="noopener noreferrer">
+            Consultar horários
+          </a>
+        </div>
+
+        <div class="highlight-poster-wrap reveal">
+          <img class="highlight-poster" src="assets/flyer-tati.jpg" alt="Cartaz de serviços da Tati Santos Nail Designer">
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+
+    <section class="section gallery" id="galeria">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div class="eyebrow" style="color:#a17c39">Inspirações</div>
+
+          <h2>Detalhes que fazem diferença.</h2>
+
+          <p>
+            Um pouco do estilo e do cuidado presente em cada atendimento.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+
+          <div class="gallery-item reveal">
+            <img src="assets/unha-gel.jpg" alt="Esmaltação em gel em tom vinho">
+          </div>
+
+          <div class="gallery-item reveal">
+            <img src="assets/maos-flyer.jpg" alt="Manicure delicada em unhas naturais">
+          </div>
+
+          <div class="gallery-item reveal">
+            <img src="assets/pes-flyer.jpg" alt="Pedicure com acabamento delicado">
+          </div>
+
+          <div class="gallery-item reveal">
+            <img src="assets/unha-gel-detalhe.jpg" alt="Detalhe do esmalte e acabamento em gel">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- AGENDAMENTO -->
+
+    <section class="section booking" id="agendamento">
+      <div class="container booking-grid">
+
+        <div class="booking-copy reveal">
+          <div class="eyebrow">Agende seu horário</div>
+
+          <h2>
+            Seu próximo cuidado começa
+            <span>com uma mensagem.</span>
+          </h2>
+
+          <p>
+            Preencha o formulário e envie sua solicitação diretamente para o
+            WhatsApp.
+          </p>
+
+          <ul class="booking-list">
+            <li>Escolha o serviço desejado</li>
+            <li>Informe o melhor dia ou período</li>
+            <li>Receba o retorno pelo WhatsApp</li>
+            <li>Confirme seu horário</li>
+          </ul>
+        </div>
+
+        <form class="booking-card reveal" onsubmit="enviarAgendamento(event)">
+          <h3>Vamos agendar?</h3>
+
+          <input
+            id="nome"
+            type="text"
+            placeholder="Seu nome"
+            required>
+
+          <select id="servico" required>
+            <option value="">Escolha um serviço</option>
+            <option>Manicure</option>
+            <option>Pedicure</option>
+            <option>Blindagem de unhas naturais</option>
+            <option>Esmaltação em gel</option>
+            <option>Alongamento no molde F1</option>
+            <option>Spa dos pés personalizado</option>
+            <option>Pedicure tradicional ou em gel</option>
+          </select>
+
+          <input
+            id="data"
+            type="text"
+            placeholder="Dia ou período de preferência">
+
+          <textarea
+            id="observacao"
+            placeholder="Alguma observação?"></textarea>
+
+          <button class="button" type="submit">
+            Enviar para o WhatsApp ↗
+          </button>
+        </form>
+
+      </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO -->
+
+    <section class="section location" id="localizacao">
+      <div class="container location-grid">
+
+        <div class="reveal">
+          <div class="eyebrow" style="color:#a17c39">
+            Localização
+          </div>
+
+          <h2>Será um prazer receber você.</h2>
+
+          <p>
+            Atendimento no Jardim Brasil, em Goiânia. Fale pelo WhatsApp para
+            confirmar o endereço completo e consultar os horários disponíveis.
+          </p>
+
+          <div class="location-info">
+            <div>
+              <span class="location-icon">⌖</span>
+              <span>
+                <strong>Região de atendimento</strong>
+                Jardim Brasil — Goiânia/GO<br>
+                Endereço completo confirmado pelo WhatsApp
+              </span>
+            </div>
+
+            <div>
+              <span class="location-icon">☏</span>
+              <span>
+                <strong>Agendamentos</strong>
+                (62) 98129-9177
+              </span>
+            </div>
+
+            <div>
+              <span class="location-icon">♡</span>
+              <span>
+                <strong>Atendimento</strong>
+                Consulte horários disponíveis pelo WhatsApp
+              </span>
+            </div>
+          </div>
+
+          <a
+            class="button"
+            href="https://wa.me/5562981299177?text=Olá!%20Gostaria%20de%20confirmar%20o%20endereço%20e%20agendar%20um%20horário."
+            target="_blank" rel="noopener noreferrer">
+            Confirmar endereço
+          </a>
+        </div>
+
+        <div class="map reveal">
+          <iframe
+            loading="lazy"
+            title="Mapa da região de atendimento no Jardim Brasil"
+            src="https://www.google.com/maps?q=Jardim%20Brasil,%20Goi%C3%A2nia%20-%20GO&output=embed">
+          </iframe>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+
+    <section class="section" style="text-align:center;background:#111">
+      <div class="container reveal">
+
+        <div class="eyebrow">Cuidado, beleza e confiança</div>
+
+        <h2>
+          Pronta para cuidar de você?
+        </h2>
+
+        <p style="max-width:520px;margin:24px auto 30px;color:#bdb6ac;font-size:14px;line-height:1.8">
+          Escolha seu serviço e agende seu horário com a Tati Santos Nail
+          Designer.
+        </p>
+
+        <a
+          class="button"
+          href="https://wa.me/5562981299177?text=Olá!%20Gostaria%20de%20agendar%20um%20horário."
+          target="_blank" rel="noopener noreferrer">
+          Agendar agora ↗
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+
+  <footer>
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+          <div class="footer-logo">Tati Santos</div>
+          <p>
+            Nail Designer especializada em cuidados para mãos e pés,
+            alongamento e esmaltação.
+          </p>
+        </div>
+
+        <div>
+          <h3>Serviços</h3>
+          <p>
+            Manicure<br>
+            Pedicure<br>
+            Blindagem<br>
+            Alongamento F1<br>
+            Spa dos pés
+          </p>
+        </div>
+
+        <div>
+          <h3>Contato</h3>
+          <p>
+            WhatsApp: (62) 98129-9177<br>
+            Goiânia — GO
+          </p>
+        </div>
+
+      </div>
+
+      <div class="copyright">
+        © 2026 Tati Santos Nail Designer. Todos os direitos reservados.
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FIXO -->
+
+  <a
+    class="whatsapp"
+    href="https://wa.me/5562981299177?text=Olá!%20Gostaria%20de%20agendar%20um%20horário."
+    target="_blank" rel="noopener noreferrer"
+    aria-label="Agendar pelo WhatsApp">
+    ☏
+  </a>
+
+  <script>
+    function alternarMenu() {
+      const menu = document.getElementById("navLinks");
+
+      menu.classList.toggle("active");
+      document.body.classList.toggle("menu-aberto");
+    }
+
+    function fecharMenu() {
+      document.getElementById("navLinks").classList.remove("active");
+      document.body.classList.remove("menu-aberto");
+    }
+
+    document.addEventListener("click", function(event) {
+      const menu = document.getElementById("navLinks");
+      const botao = document.querySelector(".menu-button");
+
+      if (
+        menu.classList.contains("active") &&
+        !menu.contains(event.target) &&
+        !botao.contains(event.target)
+      ) {
+        fecharMenu();
+      }
+    });
+
+    function enviarAgendamento(event) {
+      event.preventDefault();
+
+      const nome = document.getElementById("nome").value;
+      const servico = document.getElementById("servico").value;
+      const data = document.getElementById("data").value;
+      const observacao = document.getElementById("observacao").value;
+
+      const texto =
+        "Olá, Tati! Meu nome é " + nome +
+        ". Gostaria de agendar o serviço: " + servico +
+        ". Melhor dia/período: " + data +
+        ". Observação: " + observacao;
+
+      const url =
+        "https://wa.me/5562981299177?text=" +
+        encodeURIComponent(texto);
+
+      window.open(url, "_blank");
+    }
+
+    const observador = new IntersectionObserver(
+      function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      {
+        threshold: .12
+      }
+    );
+
+    document.querySelectorAll(".reveal").forEach(function(elemento) {
+      observador.observe(elemento);
+    });
+  </script>
+
+</body>
+</html>

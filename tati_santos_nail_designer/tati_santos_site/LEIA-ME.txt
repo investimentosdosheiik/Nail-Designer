@@ -1,0 +1,13 @@
+TATI SANTOS NAIL DESIGNER — SITE
+
+Como visualizar:
+1. Extraia o arquivo ZIP.
+2. Abra a pasta tati_santos_site.
+3. Dê dois cliques em index.html.
+
+Mantenha a pasta assets junto com o index.html. As imagens do site ficam dentro dela.
+
+Observações:
+- O botão de agendamento e o formulário direcionam para o WhatsApp informado no HTML.
+- A página exibe Jardim Brasil, Goiânia/GO como região de atendimento; o endereço completo deve ser confirmado com a profissional antes da publicação.
+- As fontes Cormorant Garamond e Montserrat são carregadas do Google Fonts quando há conexão com a internet. O site continua funcional com fontes de fallback.
